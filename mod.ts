@@ -1,5 +1,5 @@
 #!/usr/bin/env -S deno run --unstable --allow-net --allow-read --allow-write --import-map=import_map.json
-// Copyright 2023 justjavac(Seiri). All rights reserved. MIT license.
+// Copyright 2023 Seiri. All rights reserved. MIT license.
 import { format } from "std/datetime/mod.ts";
 import { join } from "std/path/mod.ts";
 import { exists } from "std/fs/mod.ts";
