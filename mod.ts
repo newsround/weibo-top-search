@@ -7,7 +7,7 @@ import type { Word } from "./types.ts";
 import { createArchive, createReadme, mergeWords } from "./utils.ts";
 
 const regexp = /<a href="(\/weibo\?q=[^"]+)".*?>(.+)<\/a>/g;
-
+// weibo
 const response = await fetch("https://s.weibo.com/top/summary", {
   headers: {
     "Cookie":
@@ -30,7 +30,7 @@ const words: Word[] = Array.from(matches).map((x) => ({
 }));
 // date format
 const yyyyMMdd = format(new Date(), "yyyy-MM-dd");
-//json path
+// json path
 const fullPath = join("raw", `${yyyyMMdd}.json`);
 //origin data
 let wordsAlreadyDownload: Word[] = [];
